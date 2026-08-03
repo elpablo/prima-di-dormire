@@ -8,6 +8,8 @@ export const siteContent = {
     feedUrl: "https://anchor.fm/s/10df94544/podcast/rss",
     spotifyUrl:
       "https://open.spotify.com/show/4p5k9uHgXNnokiEKUOCYzo?si=6d4796e415e24f73",
+    amazonMusicUrl:
+      "https://music.amazon.com/podcasts/a0a4f104-5456-4e91-92c2-fe37674ea795/prima-di-dormire",
   },
   primaryCta: {
     label: "Ascolta su Spotify",
