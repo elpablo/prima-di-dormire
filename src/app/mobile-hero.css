@@ -1,6 +1,6 @@
 @media (max-width: 560px) {
   .hero {
-    min-height: 940px;
+    min-height: 850px;
   }
 
   .nav {
@@ -24,7 +24,7 @@
     max-width: none;
     margin-inline: 14px;
     padding-top: 76px;
-    padding-bottom: 300px;
+    padding-bottom: 235px;
   }
 
   .hero-content .eyebrow {
@@ -61,11 +61,11 @@
   }
 
   .hero-glow {
-    width: 300px;
-    height: 300px;
-    right: -105px;
+    width: 230px;
+    height: 230px;
+    right: -72px;
     top: auto;
-    bottom: 165px;
+    bottom: 95px;
   }
 
   .stars span:nth-child(1) { top: 160px; right: 36%; }
@@ -75,30 +75,30 @@
   .stars span:nth-child(5) { top: 205px; right: 55%; }
 
   .moon-scene {
-    height: 250px;
+    height: 285px;
   }
 
   .moon {
-    top: 18px;
+    top: 20px;
     right: 8%;
-    width: 84px;
-    height: 84px;
-    box-shadow: 0 0 42px rgba(244, 217, 155, 0.24);
+    width: 82px;
+    height: 82px;
+    box-shadow: 0 0 40px rgba(244, 217, 155, 0.22);
   }
 
   .hill-back {
-    bottom: -108px;
-    height: 235px;
+    bottom: -100px;
+    height: 225px;
   }
 
   .hill-front {
-    bottom: -158px;
-    height: 255px;
+    bottom: -148px;
+    height: 245px;
   }
 
   .storybook-house {
     right: 14%;
-    bottom: 38px;
+    bottom: 34px;
     transform: scale(0.72);
     transform-origin: bottom center;
   }
