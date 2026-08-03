@@ -5,7 +5,7 @@ const Arrow = () => <span aria-hidden="true">↗</span>;
 
 export default async function Home() {
   const latestEpisode = await getLatestEpisode();
-  const { song, book } = siteContent;
+  const { podcast, song, book } = siteContent;
 
   return (
     <main>
@@ -78,13 +78,23 @@ export default async function Home() {
               <p>{latestEpisode.description}</p>
               <div className="card-footer">
                 <span>{latestEpisode.duration}</span>
-                <a
-                  href={latestEpisode.href}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Ascolta l&apos;episodio <Arrow />
-                </a>
+                <div className="podcast-links">
+                  <a
+                    href={latestEpisode.href}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Ascolta su Spotify <Arrow />
+                  </a>
+                  <a
+                    className="secondary-platform-link"
+                    href={podcast.amazonMusicUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Anche su Amazon Music <Arrow />
+                  </a>
+                </div>
               </div>
             </div>
           </article>
