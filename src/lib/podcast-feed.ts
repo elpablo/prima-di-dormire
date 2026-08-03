@@ -62,19 +62,6 @@ function truncate(value: string, maxLength: number): string {
   return `${shortened.slice(0, lastSpace > 0 ? lastSpace : maxLength).trim()}…`;
 }
 
-function safeUrl(value: string | null): string | null {
-  if (!value) {
-    return null;
-  }
-
-  try {
-    const url = new URL(value);
-    return url.protocol === "https:" || url.protocol === "http:" ? url.toString() : null;
-  } catch {
-    return null;
-  }
-}
-
 function formatDuration(value: string | null): string | null {
   if (!value) {
     return null;
@@ -112,9 +99,8 @@ function parseLatestEpisode(xml: string): PodcastEpisode | null {
 
   const title = extractTag(item, "title");
   const description = extractTag(item, "description");
-  const href = safeUrl(extractTag(item, "link"));
 
-  if (!title || !href) {
+  if (!title) {
     return null;
   }
 
@@ -127,7 +113,7 @@ function parseLatestEpisode(xml: string): PodcastEpisode | null {
     duration:
       formatDuration(extractTag(item, "itunes:duration")) ??
       siteContent.latestEpisode.duration,
-    href,
+    href: siteContent.podcast.spotifyUrl,
   };
 }
 
