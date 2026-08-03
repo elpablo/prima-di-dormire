@@ -27,10 +27,10 @@ export const siteContent = {
   },
   song: {
     kicker: "La storia diventa musica",
-    title: "When the Wind Chose Two Roads",
+    title: "Every Fall a Sign",
     description:
-      "La stessa emozione dell'episodio, trasformata in una canzone indie folk morbida e luminosa.",
-    href: "#",
+      "Una canzone sul coraggio di attraversare i crolli, riconoscendo in ogni caduta un segno da cui ripartire.",
+    href: "https://suno.com/s/nfr73cA76sOhdl4R",
   },
   book: {
     kicker: "Il libro",
