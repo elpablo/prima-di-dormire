@@ -4,6 +4,9 @@ export const siteContent = {
   title: "Una storia alla volta.",
   intro:
     "Racconti brevi per bambini e per gli adulti che li ascoltano con loro. Un piccolo spazio di calma, immaginazione e vicinanza prima di dormire.",
+  podcast: {
+    feedUrl: "https://anchor.fm/s/10df94544/podcast/rss",
+  },
   primaryCta: {
     label: "Ascolta su Spotify",
     href: "#podcast",
@@ -18,7 +21,7 @@ export const siteContent = {
     description:
       "Due aquiloni, due direzioni e una scoperta delicata: voler bene non significa scegliere il vento dell'altro.",
     duration: "4 min 50 sec",
-    href: "#",
+    href: "#podcast",
   },
   song: {
     kicker: "La storia diventa musica",
