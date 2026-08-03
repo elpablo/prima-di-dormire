@@ -94,7 +94,14 @@ export default async function Home() {
             <p className="card-kicker">{song.kicker}</p>
             <h3>{song.title}</h3>
             <p>{song.description}</p>
-            <a className="text-link" href={song.href}>Ascolta la canzone <Arrow /></a>
+            <a
+              className="text-link"
+              href={song.href}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Ascolta la canzone <Arrow />
+            </a>
           </article>
 
           <article className="card">
@@ -102,7 +109,14 @@ export default async function Home() {
             <p className="card-kicker">{book.kicker}</p>
             <h3>{book.title}</h3>
             <p>{book.description}</p>
-            <a className="text-link" href={book.href}>Scopri il libro <Arrow /></a>
+            <a
+              className="text-link"
+              href={book.href}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Scopri il libro <Arrow />
+            </a>
           </article>
         </div>
       </section>
