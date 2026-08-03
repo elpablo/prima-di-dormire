@@ -37,6 +37,6 @@ export const siteContent = {
     title: "Prima di Dormire",
     description:
       "Una raccolta di racconti per bambini, nata per restare vicini anche quando si è lontani.",
-    href: "#",
+    href: "https://www.amazon.it/dp/B0GDY7PJJN",
   },
 } as const;
