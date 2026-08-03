@@ -68,11 +68,15 @@
     bottom: 95px;
   }
 
-  .stars span:nth-child(1) { top: 160px; right: 36%; }
-  .stars span:nth-child(2) { top: 230px; right: 15%; }
-  .stars span:nth-child(3) { top: 128px; right: 10%; }
-  .stars span:nth-child(4) { top: 275px; right: 42%; }
-  .stars span:nth-child(5) { top: 205px; right: 55%; }
+  .stars span {
+    opacity: 0.62;
+  }
+
+  .stars span:nth-child(1) { top: 126px; right: 35%; }
+  .stars span:nth-child(2),
+  .stars span:nth-child(4) { display: none; }
+  .stars span:nth-child(3) { top: 150px; right: 11%; }
+  .stars span:nth-child(5) { top: 178px; right: 54%; }
 
   .moon-scene {
     height: 285px;
