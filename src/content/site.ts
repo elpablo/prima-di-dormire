@@ -6,6 +6,8 @@ export const siteContent = {
     "Racconti brevi per bambini e per gli adulti che li ascoltano con loro. Un piccolo spazio di calma, immaginazione e vicinanza prima di dormire.",
   podcast: {
     feedUrl: "https://anchor.fm/s/10df94544/podcast/rss",
+    spotifyUrl:
+      "https://open.spotify.com/show/4p5k9uHgXNnokiEKUOCYzo?si=6d4796e415e24f73",
   },
   primaryCta: {
     label: "Ascolta su Spotify",
@@ -21,7 +23,7 @@ export const siteContent = {
     description:
       "Due aquiloni, due direzioni e una scoperta delicata: voler bene non significa scegliere il vento dell'altro.",
     duration: "4 min 50 sec",
-    href: "#podcast",
+    href: "https://open.spotify.com/show/4p5k9uHgXNnokiEKUOCYzo?si=6d4796e415e24f73",
   },
   song: {
     kicker: "La storia diventa musica",
