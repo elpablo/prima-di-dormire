@@ -39,8 +39,14 @@ export default function Home() {
           <div className="moon" />
           <div className="hill hill-back" />
           <div className="hill hill-front" />
-          <div className="window">
-            <span className="window-light" />
+          <div className="storybook-house">
+            <span className="house-chimney" />
+            <span className="house-roof" />
+            <span className="house-body">
+              <span className="window">
+                <span className="window-light" />
+              </span>
+            </span>
           </div>
         </div>
       </section>
@@ -65,7 +71,7 @@ export default function Home() {
               <p>{latestEpisode.description}</p>
               <div className="card-footer">
                 <span>{latestEpisode.duration}</span>
-                <a href={latestEpisode.href}>Ascolta l'episodio <Arrow /></a>
+                <a href={latestEpisode.href}>Ascolta l&apos;episodio <Arrow /></a>
               </div>
             </div>
           </article>
