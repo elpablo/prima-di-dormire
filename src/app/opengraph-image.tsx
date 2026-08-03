@@ -32,7 +32,6 @@ export default function OpenGraphImage() {
             flexDirection: "column",
             width: "700px",
             gap: "22px",
-            zIndex: 2,
           }}
         >
           <div
@@ -78,6 +77,7 @@ export default function OpenGraphImage() {
 
         <div
           style={{
+            display: "flex",
             width: "330px",
             height: "330px",
             position: "relative",
