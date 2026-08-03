@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./hero-house.css";
+import "./mobile-hero.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://primadidormire.eu"),
