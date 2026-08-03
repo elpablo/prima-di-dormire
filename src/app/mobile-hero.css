@@ -1,0 +1,105 @@
+@media (max-width: 560px) {
+  .hero {
+    min-height: 940px;
+  }
+
+  .nav {
+    padding-block: 18px;
+  }
+
+  .brand {
+    gap: 8px;
+    font-size: 1.05rem;
+  }
+
+  .brand-mark {
+    font-size: 1.35rem;
+  }
+
+  .nav-link {
+    font-size: 0.98rem;
+  }
+
+  .hero-content {
+    max-width: none;
+    margin-inline: 14px;
+    padding-top: 76px;
+    padding-bottom: 300px;
+  }
+
+  .hero-content .eyebrow {
+    max-width: 330px;
+    margin-bottom: 16px;
+    font-size: 0.68rem;
+    line-height: 1.65;
+    letter-spacing: 0.14em;
+  }
+
+  .hero-content h1 {
+    max-width: 340px;
+    margin-bottom: 22px;
+    font-size: clamp(3.05rem, 16vw, 3.45rem);
+    line-height: 1.02;
+  }
+
+  .hero-copy {
+    max-width: 340px;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.58;
+  }
+
+  .hero-actions {
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .hero-actions .button {
+    min-height: 50px;
+    padding-inline: 18px;
+    font-size: 0.98rem;
+  }
+
+  .hero-glow {
+    width: 300px;
+    height: 300px;
+    right: -105px;
+    top: auto;
+    bottom: 165px;
+  }
+
+  .stars span:nth-child(1) { top: 160px; right: 36%; }
+  .stars span:nth-child(2) { top: 230px; right: 15%; }
+  .stars span:nth-child(3) { top: 128px; right: 10%; }
+  .stars span:nth-child(4) { top: 275px; right: 42%; }
+  .stars span:nth-child(5) { top: 205px; right: 55%; }
+
+  .moon-scene {
+    height: 250px;
+  }
+
+  .moon {
+    top: 18px;
+    right: 8%;
+    width: 84px;
+    height: 84px;
+    box-shadow: 0 0 42px rgba(244, 217, 155, 0.24);
+  }
+
+  .hill-back {
+    bottom: -108px;
+    height: 235px;
+  }
+
+  .hill-front {
+    bottom: -158px;
+    height: 255px;
+  }
+
+  .storybook-house {
+    right: 14%;
+    bottom: 38px;
+    transform: scale(0.72);
+    transform-origin: bottom center;
+  }
+}
