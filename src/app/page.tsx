@@ -1,9 +1,11 @@
 import { siteContent } from "@/content/site";
+import { getLatestEpisode } from "@/lib/podcast-feed";
 
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
-export default function Home() {
-  const { latestEpisode, song, book } = siteContent;
+export default async function Home() {
+  const latestEpisode = await getLatestEpisode();
+  const { song, book } = siteContent;
 
   return (
     <main>
@@ -26,7 +28,12 @@ export default function Home() {
           <h1 id="hero-title">{siteContent.title}</h1>
           <p className="hero-copy">{siteContent.intro}</p>
           <div className="hero-actions">
-            <a className="button button-primary" href={siteContent.primaryCta.href}>
+            <a
+              className="button button-primary"
+              href={latestEpisode.href}
+              target="_blank"
+              rel="noreferrer"
+            >
               {siteContent.primaryCta.label} <Arrow />
             </a>
             <a className="button button-quiet" href={siteContent.secondaryCta.href}>
@@ -71,7 +78,13 @@ export default function Home() {
               <p>{latestEpisode.description}</p>
               <div className="card-footer">
                 <span>{latestEpisode.duration}</span>
-                <a href={latestEpisode.href}>Ascolta l&apos;episodio <Arrow /></a>
+                <a
+                  href={latestEpisode.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Ascolta l&apos;episodio <Arrow />
+                </a>
               </div>
             </div>
           </article>
@@ -116,7 +129,14 @@ export default function Home() {
           <span className="closing-moon" aria-hidden="true">☾</span>
           <p className="eyebrow">Un nuovo racconto ogni settimana</p>
           <h2 id="closing-title">Questa sera, lasciamo entrare una storia.</h2>
-          <a className="button button-primary" href="#podcast">Ascolta Prima di Dormire <Arrow /></a>
+          <a
+            className="button button-primary"
+            href={latestEpisode.href}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ascolta Prima di Dormire <Arrow />
+          </a>
         </div>
       </section>
 
