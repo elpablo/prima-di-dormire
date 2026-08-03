@@ -91,8 +91,10 @@ h3 { font-size: 1.8rem; margin-bottom: 14px; }
 .card-kicker { font-size: .74rem; text-transform: uppercase; letter-spacing: .13em; font-weight: 700; color: #74806f; }
 .card p { color: var(--ink-soft); }
 .card-icon { display: grid; place-items: center; width: 48px; height: 48px; margin-bottom: 30px; border-radius: 50%; background: var(--night); color: var(--moon); font-size: 1.35rem; }
-.card-footer { display: flex; justify-content: space-between; align-items: center; gap: 18px; margin-top: auto; padding-top: 20px; border-top: 1px solid var(--line); font-size: .88rem; }
+.card-footer { display: flex; justify-content: space-between; align-items: flex-end; gap: 18px; margin-top: auto; padding-top: 20px; border-top: 1px solid var(--line); font-size: .88rem; }
 .card-footer a, .text-link { font-weight: 700; text-decoration: none; }
+.podcast-links { display: flex; align-items: flex-end; flex-direction: column; gap: 4px; text-align: right; }
+.secondary-platform-link { color: var(--ink-soft); font-size: .78rem; font-weight: 600 !important; }
 .text-link { display: inline-flex; gap: 8px; margin-top: auto; padding-top: 22px; }
 
 .story-section { padding-block: 100px; background: var(--paper-deep); }
@@ -125,6 +127,7 @@ h3 { font-size: 1.8rem; margin-bottom: 14px; }
   .button { justify-content: center; }
   .section { padding-block: 76px; }
   .card-footer { align-items: flex-start; flex-direction: column; }
+  .podcast-links { align-items: flex-start; text-align: left; }
   .story-section, .closing { padding-block: 76px; }
   .closing-card { padding: 74px 22px; }
   .footer { flex-direction: column; }
