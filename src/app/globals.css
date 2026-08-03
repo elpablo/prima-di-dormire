@@ -76,7 +76,7 @@ h3 { font-size: 1.8rem; margin-bottom: 14px; }
 .section-heading { max-width: 760px; margin-bottom: 48px; }
 .section .eyebrow, .story-section .eyebrow, .closing .eyebrow { color: #7a856f; }
 .feature-grid { display: grid; grid-template-columns: 1.35fr .8fr .8fr; gap: 22px; align-items: stretch; }
-.card { padding: 30px; border: 1px solid var(--line); border-radius: 28px; background: rgba(255,255,255,.45); }
+.card { display: flex; flex-direction: column; padding: 30px; border: 1px solid var(--line); border-radius: 28px; background: rgba(255,255,255,.45); }
 .card-featured { padding: 0; overflow: hidden; background: #f1e7d8; }
 .card-art { min-height: 250px; position: relative; overflow: hidden; background: linear-gradient(160deg, #769199, #d8c99c); }
 .card-art::after { content: ''; position: absolute; inset: auto -10% -50px; height: 130px; border-radius: 50% 50% 0 0; background: #627b6d; }
@@ -87,13 +87,13 @@ h3 { font-size: 1.8rem; margin-bottom: 14px; }
 .wind-line { position: absolute; border-top: 2px solid rgba(255,255,255,.35); border-radius: 50%; width: 140px; height: 32px; }
 .wind-one { left: 12%; top: 62%; transform: rotate(8deg); }
 .wind-two { right: 8%; top: 18%; transform: rotate(-10deg); }
-.card-body { padding: 30px; }
+.card-body { display: flex; flex: 1; flex-direction: column; padding: 30px; }
 .card-kicker { font-size: .74rem; text-transform: uppercase; letter-spacing: .13em; font-weight: 700; color: #74806f; }
 .card p { color: var(--ink-soft); }
 .card-icon { display: grid; place-items: center; width: 48px; height: 48px; margin-bottom: 30px; border-radius: 50%; background: var(--night); color: var(--moon); font-size: 1.35rem; }
-.card-footer { display: flex; justify-content: space-between; align-items: center; gap: 18px; margin-top: 26px; padding-top: 20px; border-top: 1px solid var(--line); font-size: .88rem; }
+.card-footer { display: flex; justify-content: space-between; align-items: center; gap: 18px; margin-top: auto; padding-top: 20px; border-top: 1px solid var(--line); font-size: .88rem; }
 .card-footer a, .text-link { font-weight: 700; text-decoration: none; }
-.text-link { display: inline-flex; gap: 8px; margin-top: 22px; }
+.text-link { display: inline-flex; gap: 8px; margin-top: auto; padding-top: 22px; }
 
 .story-section { padding-block: 100px; background: var(--paper-deep); }
 .story-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
